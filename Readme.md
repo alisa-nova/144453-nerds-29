@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Alisa Tetenova](https://up.htmlacademy.ru/htmlcss/29/user/144453).
-* Наставник: `Неизвестно`.
+* Наставник: [Андрей Гинтер](https://up.htmlacademy.ru/htmlcss/29/user/781369).
 
 ---
 
