@@ -1,0 +1,350 @@
+/*Variables*/
+
+:root {
+  --basic-white: #ffffff;
+
+  --basic-grey-light: #e1e1e1;
+  --basic-grey: #eeeeee;
+  --basic-grey-direct: #dfdfdf;
+  --basic-grey-press: #d5d5d5;
+  --basic-grey-dark: #4d4d4d;
+
+  --basic-black: #000000;
+  --basic-black-light: #283136;
+
+  --basic-coral: #fb565a;
+  --basic-coral-hover: #e74246;
+  --basic-coral-focus: #d7373b;
+
+  --basic-green: #00ca74;
+  --basic-green-hover: #00bc6c;
+  --basic-green-focus: #00aa62;
+
+  --basic-yellow: #efc84a;
+  --basic-yellow-hover: #eab534;
+  --basic-yellow-focus: #e5a722;
+
+  --special-grey-cart: #a6a6a6;
+  --special-grey-map: #666666;
+  --special-grey-partner: #444444;
+  --special-grey-form-medium: #b4b9bb;
+  --special-grey-form-light: #d7dcde;
+  --special-black-triangle: #231f20;
+}
+
+/*Global*/
+
+body {
+  min-width: 1157px;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400px;
+  color: var(--basic-black-light);
+  background-color: var(--basic-white);
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Button */
+
+.button {
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: var(--basic-white);
+  text-align: center;
+  vertical-align: middle;
+  background-color: var(--basic-coral);
+  border-radius: 3px;
+}
+
+.button:hover {
+  background-color: var(--basic-coral-hover);
+}
+
+.button:focus {
+  mix-blend-mode: normal;
+  opacity: 0.3;
+  background-color: var(--basic-coral-focus);
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+}
+
+.directions-button-green {
+  background-color: var(--basic-green);
+}
+
+.directions-button-green:hover {
+  background-color: var(--basic-green-hover);
+}
+
+.directions-button-green:focus {
+  mix-blend-mode: normal;
+  opacity: 0.3;
+  background-color: var(--basic-green-focus);
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+}
+
+.directions-button-yellow {
+  background-color: var(--basic-yellow);
+}
+
+.directions-button-yellow:hover {
+  background-color: var(--basic-yellow-hover);
+}
+
+.directions-button-yellow:focus {
+  mix-blend-mode: normal;
+  opacity: 0.3;
+  background-color: var(--basic-yellow-focus);
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+}
+
+/* Main navigation */
+
+.main-header {
+  background-color: var(--basic-grey);
+}
+
+.main-header-logo:focus {
+  background-image: url("../img/nerds-logo-grey");
+}
+
+.main-navigation {
+  line-height: 30px;
+  color: var(--basic-black);
+  font-weight: 500px;
+  text-transform: uppercase;
+}
+
+.site-navigation {
+  list-style: none;
+}
+
+.site-navigation a,
+.cart-navigation a {
+  color: var(--basic-black);
+}
+
+.site-navigation a:hover,
+.cart-navigation a:hover {
+  color: var(--basic-coral);
+}
+
+.site-navigation a:focus,
+.cart-navigation a:focus {
+  color: var(--basic-black);
+  mix-blend-mode: normal;
+  opacity: 0.3;
+}
+
+/*Slider*/
+
+.main-slider {
+  background-color: var(--basic-grey);
+}
+
+.main-slider-list {
+  list-style: none;
+}
+
+.main-slider-item {
+  text-align: left;
+}
+
+.slider-big-text {
+  color: var(--basic-black);
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 55px;
+}
+
+/*Directions*/
+
+.directions-list {
+  list-style: none;
+}
+
+.directions-item {
+  text-align: left;
+}
+
+.directions-item h3 {
+  font-family: "Roboto", Arial, sans-serif;
+  color: var(--basic-black);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+/*About*/
+
+.about {
+  text-align: left;
+}
+
+.about-big-text {
+  color: var(--basic-black);
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 45px;
+}
+
+.about h3 {
+  font-family: "Roboto", Arial, sans-serif;
+  color: var(--basic-black-light);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.advantages {
+  text-align: center;
+}
+
+.advantages-big-text {
+  color: var(--basic-black);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.advantages-number {
+  color: var(--basic-black);
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 64px;
+}
+
+.advantages-percent {
+  color: var(--basic-black);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 40px;
+}
+
+.advantages-item p {
+  line-height: 18px;
+}
+
+/*Footer*/
+
+.footer-map-content {
+  text-align: center;
+}
+
+.footer-map-content h3 {
+  font-family: "Roboto", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: var(--basic-black);
+}
+
+.footer-map-content p,
+.footer-map-content a {
+  line-height: 18px;
+  color: var(--special-grey-map);
+}
+
+.footer-big-text {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 36px;
+  color: var(--basic-black);
+}
+
+.footer-light-text {
+  font-weight: 400;
+  line-height: 22px;
+  color: var(--special-grey-partner);
+}
+
+.footer-social ul {
+  list-style: none;
+}
+
+.footer-social-icons {
+  background: linear-gradient(0deg, var(--basic-grey-light), var(--basic-grey-light)), var(--basic-white);
+}
+
+.footer-social-icons:hover {
+  background: linear-gradient(0deg, var(--basic-coral-hover), var(--basic-coral-hover)), var(--basic-white);
+}
+
+.footer-social-icons:focus {
+  background: linear-gradient(0deg, var(--basic-coral-focus), var(--basic-coral-focus)), var(--basic-white);
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+}
+
+/*Modal*/
+
+.modal {
+  background-color: var(--basic-white);
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.modal h2 {
+  font-family: "Roboto", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 53px;
+  color: var(--basic-black);
+  text-align: left;
+}
+
+.modal-item label {
+  color: var(--basic-black);
+  font-weight: 700;
+  line-height: 18px;
+}
+
+.modal-item input {
+  color: var(--special-grey-partner);
+  mix-blend-mode: normal;
+  opacity: 0.5;
+  line-height: 18px;
+  background-color: transparent;
+  border: 2px solid var(--special-grey-form-light);
+}
+
+.modal-item input:hover {
+  border-color: var(--special-grey-form-medium);
+}
+
+.modal-item input:focus {
+  opacity: none;
+  border-color: var(--basic-black);
+}
+
+.modal-item input:invalid {
+  opacity: none;
+  color: var(--basic-coral-hover);
+  border-color: var(--basic-coral-hover);
+}
+
+.button-close-cross {
+  color: var(--basic-coral);
+  opacity: 0.3;
+}
+
+.button-close-cross:hover {
+  color: var(--basic-coral);
+}
+
+.button-close-cross:focus {
+  color: var(--basic-coral);
+  opacity: 0.1;
+}
