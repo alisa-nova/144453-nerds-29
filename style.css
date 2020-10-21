@@ -212,6 +212,9 @@ img {
 
 .advantages {
   text-align: center;
+}
+
+.advantages-list {
   list-style: none;
 }
 
@@ -277,7 +280,7 @@ img {
   color: var(--special-grey-partner);
 }
 
-.footer-social ul {
+.footer-social-icons {
   list-style: none;
 }
 
