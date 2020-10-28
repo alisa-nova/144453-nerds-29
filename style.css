@@ -90,6 +90,7 @@ img {
 }
 
 .button-text:focus {
+  mix-blend-mode: normal;
   opacity: 0.3;
 }
 
@@ -288,12 +289,16 @@ img {
   border-bottom: 1px solid var(--basic-grey);
 }
 
-.logo-academy:hover {
-
+.logotypes-item {
+  opacity: 0.2;
 }
 
-.logo-academy:focus {
+.logotypes-item:hover {
+  opacity: none;
+}
 
+.logotypes-item:focus {
+  opacity: 0.1;
 }
 
 /*Footer*/
