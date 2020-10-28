@@ -290,15 +290,15 @@ img {
 }
 
 .logotypes-item {
-  opacity: 0.2;
+  opacity: 0.1;
 }
 
 .logotypes-item:hover {
-  opacity: none;
+  opacity: 0.5;
 }
 
 .logotypes-item:focus {
-  opacity: 0.1;
+  opacity: 1;
 }
 
 /*Footer*/
