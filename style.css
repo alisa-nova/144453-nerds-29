@@ -173,14 +173,26 @@ img {
 
 .slider-pic-1 {
   background-image: url(img/nerds-index-slide1.png);
+  background-position: top right;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  height: auto;
 }
 
 .slider-pic-2 {
   background-image: url(img/nerds-index-slide2.png);
+  background-position: top right;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  height: auto;
 }
 
 .slider-pic-3 {
   background-image: url(img/nerds-index-slide3.png);
+  background-position: top right;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  height: auto;
 }
 
 .main-slider-item {
@@ -214,6 +226,10 @@ img {
 }
 
 /*About*/
+
+.container-about {
+  border-top: 1px solid var(--basic-grey);
+}
 
 .about {
   text-align: left;
@@ -268,10 +284,12 @@ img {
 
 .logotypes-list {
   list-style: none;
+  border-top: 1px solid var(--basic-grey);
+  border-bottom: 1px solid var(--basic-grey);
 }
 
 .logo-academy:hover {
-  
+
 }
 
 .logo-academy:focus {
