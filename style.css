@@ -29,6 +29,7 @@
   --special-grey-partner: #444444;
   --special-grey-form-medium: #b4b9bb;
   --special-grey-form-light: #d7dcde;
+  --special-grey-border: #dbdbdb;
   --special-black-triangle: #231f20;
 }
 
@@ -89,13 +90,22 @@ img {
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
 
+.button:active {
+
+}
+
 .button-text:focus {
   mix-blend-mode: normal;
   opacity: 0.3;
 }
 
+.directions-button-red {
+  border: none;
+}
+
 .directions-button-green {
   background-color: var(--basic-green);
+  border: none;
 }
 
 .directions-button-green:hover {
@@ -109,6 +119,7 @@ img {
 
 .directions-button-yellow {
   background-color: var(--basic-yellow);
+  border: none;
 }
 
 .directions-button-yellow:hover {
@@ -126,8 +137,13 @@ img {
   background-color: var(--basic-grey);
 }
 
+.main-header-logo:hover,
+.main-header-logo:active {
+  background-image: url("/img/nerds-logo.png");
+}
+
 .main-header-logo:focus {
-  background-image: url("../img/nerds-logo-grey");
+  background-image: url("/img/nerds-logo-grey.png");
 }
 
 .main-navigation {
@@ -144,11 +160,15 @@ img {
 .site-navigation a,
 .cart-navigation a {
   color: var(--basic-black);
+  border-bottom: 1px solid transparent;
+  padding: 13px;
 }
 
 .site-navigation a:hover,
 .cart-navigation a:hover {
   color: var(--basic-coral);
+  border-bottom: 1px solid transparent;
+  padding: 13px;
 }
 
 .site-navigation a:focus,
@@ -156,6 +176,14 @@ img {
   color: var(--basic-black);
   mix-blend-mode: normal;
   opacity: 0.3;
+  border-bottom: 1px solid transparent;
+  padding: 13px;
+}
+
+.site-navigation a:active,
+.cart-navigation a:active {
+  border-bottom: 1px solid var(--basic-coral);
+  padding: 13px;
 }
 
 .cart-pic {
@@ -289,15 +317,19 @@ img {
   border-bottom: 1px solid var(--basic-grey);
 }
 
-.logotypes-item {
+.logotypes-img {
   opacity: 0.5;
 }
 
-.logotypes-item:hover {
+.logotypes-img:active {
+  opacity: 0.5;
+}
+
+.logotypes-img:hover {
   opacity: 1;
 }
 
-.logotypes-item:focus {
+.logotypes-img:focus {
   opacity: 0.1;
 }
 
@@ -412,4 +444,117 @@ img {
 
 .button-close-cross:focus {
   opacity: 0.1;
+}
+
+/*Catalog*/
+
+.catalog-title-container {
+  background-color: var(--basic-grey);
+}
+
+.catalog-title {
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 55px;
+  color: var(--basic-black);
+}
+
+.projects-grey-block {
+  background-color: var(--basic-grey-dark);
+}
+
+.projects-grey-block::before {
+  content: "...img/path.png";
+  repeat: 3;
+}
+
+.project-heading {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: var(--basic-black);
+}
+
+.project-text {
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--special-grey-map);
+}
+
+/*Filter*/
+
+.filter-legend,
+.sort-legend {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  color: var(--basic-black);
+}
+
+.filter-option label {
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--basic-black-light);
+}
+
+.filter-button {
+  color: var(--basic-black);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  background-color: var(--basic-grey);
+  border-radius: 3px;
+}
+
+.sort-item {
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--basic-black);
+  mix-blend-mode: normal;
+  opacity: 0.3;
+}
+
+.sort-item:active,
+.sort-item:focus {
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--basic-black);
+}
+
+.sort-item:focus {
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--basic-black);
+  mix-blend-mode: normal;
+  opacity: 0.6;
+}
+
+/*Pagination*/
+
+.pagination-list {
+  list-style: none;
+}
+
+.pagination-item {
+  color: var(--basic-black);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  background-color: var(--basic-grey);
+  border-radius: 3px;
+}
+
+.pagination-item:hover {
+  background-color: var(--basic-grey-direct);
+}
+.pagination-item:focus {
+  opacity: 0.3;
+  background-color: var(--basic-grey-direct);
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+}
+.pagination-item:active {
+  background-color: transparent;
+  border: 3px solid var(--special-grey-border);
+  border-radius: 3px;
 }
