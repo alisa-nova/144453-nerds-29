@@ -91,6 +91,20 @@ img {
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
 
+.button-text,
+.button-text:hover,
+.button-text:active {
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: var(--basic-white);
+  text-align: center;
+  vertical-align: middle;
+  border: none;
+}
+
 .button-text:focus {
   mix-blend-mode: normal;
   opacity: 0.3;
@@ -349,6 +363,10 @@ img {
   text-align: center;
 }
 
+.footer-map {
+  background-image: url(/img/map.png);
+}
+
 .footer-map-content h3 {
   font-family: "Roboto", Arial, sans-serif;
   font-weight: 700;
@@ -537,6 +555,38 @@ img {
   color: var(--basic-black);
   mix-blend-mode: normal;
   opacity: 0.6;
+}
+
+.filter-radio,
+.filter-radio:active,
+.filter-checkbox,
+.filter-checkbox:active {
+  background-color: var(--basic-grey-dark);
+  opacity: 0.4;
+}
+
+.filter-radio:hover,
+.filter-checkbox:hover {
+  background-color: var(--basic-grey-dark);
+}
+
+.filter-radio-blocked,
+.filter-checkbox-blocked {
+  background-color: var(--basic-grey-dark);
+  opacity: 0.1;
+}
+
+.filter-option label,
+.filter-option label:hover,
+.filter-option label:active {
+  color: var(--basic-black-light);
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.filter-option-blocked label {
+  color: var(--basic-black-light);
+  opacity: 0.3;
 }
 
 /*Pagination*/
