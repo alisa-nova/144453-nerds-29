@@ -364,7 +364,7 @@ img {
 }
 
 .footer-map {
-  background-image: url(/img/map.png);
+  background-image: url("/img/map.png");
 }
 
 .footer-map-content h3 {
@@ -496,7 +496,7 @@ img {
 }
 
 .projects-grey-block::before {
-  content: "...img/path.png";
+  content: "../img/path.png";
   repeat: 3;
 }
 
