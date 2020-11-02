@@ -67,7 +67,8 @@ img {
 
 /* Button */
 
-.button {
+.button,
+.button:active {
   font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
   font-weight: 500;
@@ -90,13 +91,10 @@ img {
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
 
-.button:active {
-
-}
-
 .button-text:focus {
   mix-blend-mode: normal;
   opacity: 0.3;
+  border: none;
 }
 
 .directions-button-red {
@@ -110,11 +108,13 @@ img {
 
 .directions-button-green:hover {
   background-color: var(--basic-green-hover);
+  border: none;
 }
 
 .directions-button-green:focus {
   background-color: var(--basic-green-focus);
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  border: none;
 }
 
 .directions-button-yellow {
@@ -124,11 +124,21 @@ img {
 
 .directions-button-yellow:hover {
   background-color: var(--basic-yellow-hover);
+  border: none;
 }
 
 .directions-button-yellow:focus {
   background-color: var(--basic-yellow-focus);
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  border: none;
+}
+
+.project-button {
+  border: none;
+}
+
+.map-button {
+  color: var(--basic-white);
 }
 
 /* Main navigation */
@@ -504,7 +514,6 @@ img {
   font-size: 16px;
   line-height: 18px;
   background-color: var(--basic-grey);
-  border-radius: 3px;
 }
 
 .sort-item {
@@ -546,14 +555,17 @@ img {
 }
 
 .pagination-item:hover {
+  color: var(--basic-black);
   background-color: var(--basic-grey-direct);
 }
 .pagination-item:focus {
+  color: var(--basic-black);
   opacity: 0.3;
   background-color: var(--basic-grey-direct);
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
 .pagination-item:active {
+  color: var(--basic-black);
   background-color: transparent;
   border: 3px solid var(--special-grey-border);
   border-radius: 3px;
