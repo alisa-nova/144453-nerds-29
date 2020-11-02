@@ -497,7 +497,6 @@ img {
 
 .projects-grey-block::before {
   content: "../img/path.png";
-  repeat: 3;
 }
 
 .project-heading {
@@ -523,6 +522,21 @@ img {
   line-height: 30px;
   color: var(--basic-black);
 }
+
+.filter-legend {
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--basic-black);
+  text-transform: uppercase;
+}
+
+ .filter-legend-value {
+   font-size: 16px;
+   line-height: 22px;
+   color: var(--basic-black);
+   text-transform: uppercase;
+   background-color: var(--basic-grey);
+ }
 
 .filter-option label {
   font-size: 16px;
