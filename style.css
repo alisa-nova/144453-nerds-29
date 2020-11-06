@@ -427,6 +427,9 @@ img {
 }
 
 .modal-item-input {
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 18px;
   color: var(--special-grey-partner);
   mix-blend-mode: normal;
   opacity: 0.5;
@@ -485,7 +488,8 @@ img {
 }
 
 .projects-grey-block::before {
-  content: "../img/path.png";
+  content: "";
+  background-image: url(../img/path.png);
 }
 
 .project-heading {
@@ -504,19 +508,18 @@ img {
 
 /*Filter*/
 
-.filter-legend,
 .sort-legend {
   font-weight: 700;
   font-size: 18px;
   line-height: 30px;
   color: var(--basic-black);
+  text-transform: uppercase;
 }
 
 .filter-legend {
   font-size: 16px;
   line-height: 22px;
-  color: var(--basic-black);
-  text-transform: uppercase;
+  color: var(--basic-black-light);
 }
 
  .filter-legend-value {
@@ -525,6 +528,13 @@ img {
    color: var(--basic-black);
    text-transform: uppercase;
    background-color: var(--basic-grey);
+ }
+
+ .filter-legend-text {
+   font-size: 16px;
+   line-height: 22px;
+   color: var(--basic-black);
+   text-transform: uppercase;
  }
 
 .filter-option label {
@@ -540,6 +550,17 @@ img {
   line-height: 18px;
   background-color: var(--basic-grey);
   border: none;
+}
+
+.filter-button:hover {
+  background-color: var(--basic-grey-direct);
+  border-radius: 3px;
+}
+
+.filter-button:active {
+  background-color: var(--basic-grey-press);
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  border-radius: 3px;
 }
 
 .sort-item {

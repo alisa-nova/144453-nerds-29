@@ -43,55 +43,54 @@
         <h2 class="filter-heading">Фильтр проектов</h2>
         <form class="filter-form" method="get" action="https://echo.htmlacademy.ru">
           <fieldset>
-            <div>
-              <legend class="filter-legend">Стоимость:</legend>
-              <input type="range" min="0" max="15000">
-              <p>от <span class="filter-legend-value">0</span> до <span class="filter-legend-value">15 000</span></p>
-            </div>
-            <div>
-              <legend class="filter-legend">Сетка:</legend>
-              <ul>
-                <li>
-                  <input class="filter-option filter-radio" type="radio" name="adaptive" id="adaptive" checked>
-                  <label for="adaptive">Адаптивная</label>
-                </li>
-                <li>
-                  <input class="filter-option filter-radio" type="radio" name="fixed" id="fixed">
-                  <label for="fixed">Фиксированная</label>
-                </li>
-                <li>
-                  <input class="filter-option filter-radio" type="radio" name="rubber" id="rubber" checked>
-                  <label for="rubber">Резиновая</label>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <legend class="filter-legend">Особенности:</legend>
-              <ul>
-                <li>
-                  <input class="filter-option filter-checkbox" type="checkbox" name="slider" id="slider" checked>
-                  <label for="slider">Слайдер</label>
-                </li>
-                <li>
-                  <input class="filter-option filter-checkbox" type="checkbox" name="adv" id="adv">
-                  <label for="adv">Блок преимуществ</label>
-                </li>
-                <li>
-                  <input class="filter-option filter-checkbox" type="checkbox" name="news" id="news" checked>
-                  <label for="news">Новости</label>
-                </li>
-                <li>
-                  <input class="filter-option filter-checkbox" type="checkbox" name="gallery" id="gallery">
-                  <label for="gallery">Галерея</label>
-                </li>
-                <li>
-                  <input class="filter-option filter-checkbox" type="checkbox" name="cart" id="cart">
-                  <label for="cart">Корзина</label>
-                </li>
-              </ul>
-            </div>
+            <legend class="filter-legend">Стоимость:</legend>
+            <input type="range" min="0" max="15000">
+            <p class="filter-legend-text">от <span class="filter-legend-value">0</span> до <span class="filter-legend-value">15 000</span></p>
           </fieldset>
-          <button type="submit" class="filter-button button">Показать</button>
+
+          <fieldset>
+            <legend class="filter-legend">Сетка:</legend>
+            <ul>
+              <li>
+                <input class="filter-option filter-radio" type="radio" name="choose-grid" id="adaptive" value="adaptive" checked>
+                <label for="adaptive">Адаптивная</label>
+              </li>
+              <li>
+                <input class="filter-option filter-radio" type="radio" name="choose-grid" id="fixed" value="fixed">
+                <label for="fixed">Фиксированная</label>
+              </li>
+              <li>
+                <input class="filter-option filter-radio" type="radio" name="choose-grid" id="rubber" value="rubber" checked>
+                <label for="rubber">Резиновая</label>
+              </li>
+            </ul>
+
+            <legend class="filter-legend">Особенности:</legend>
+            <ul>
+              <li>
+                <input class="filter-option filter-checkbox" type="checkbox" name="slider" id="slider" checked>
+                <label for="slider">Слайдер</label>
+              </li>
+              <li>
+                <input class="filter-option filter-checkbox" type="checkbox" name="advantages" id="advantages">
+                <label for="advantages">Блок преимуществ</label>
+              </li>
+              <li>
+                <input class="filter-option filter-checkbox" type="checkbox" name="news" id="news" checked>
+                <label for="news">Новости</label>
+              </li>
+              <li>
+                <input class="filter-option filter-checkbox" type="checkbox" name="gallery" id="gallery">
+                <label for="gallery">Галерея</label>
+              </li>
+              <li>
+                <input class="filter-option filter-checkbox" type="checkbox" name="cart" id="cart">
+                <label for="cart">Корзина</label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <button type="submit" class="button filter-button">Показать</button>
         </form>
 
 
